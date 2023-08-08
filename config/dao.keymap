@@ -35,10 +35,10 @@
 
         default_layer {
             bindings = <
-     &mt GRAVE TAB  &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E  &mt NUMBER_4 R  &mt NUMBER_5 T  &mt NUMBER_6 Y  &mt NUMBER_7 U  &mt NUMBER_8 I  &mt NUMBER_9 O  &mt NUMBER_0 P  &mt RIGHT_BRACKET LEFT_BRACKET
-&mt LS(LALT) LSHFT           &kp A           &kp S           &kp D           &kp F           &kp G           &kp H           &kp J           &kp K           &kp L        &kp SEMI                  &mt RSHIFT SQT
-  &mt LCTRL ESCAPE           &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M       &kp COMMA         &kp DOT        &kp FSLH                  &mt RCTRL BSLH
-                                                      &kp LEFT_WIN     &lt 3 SPACE           &none           &none     &lt 1 ENTER     &lt 2 SPACE
+     &mt GRAVE TAB  &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E  &mt NUMBER_4 R  &mt NUMBER_5 T   &mt NUMBER_6 Y  &mt NUMBER_7 U  &mt NUMBER_8 I  &mt NUMBER_9 O  &mt NUMBER_0 P  &mt RIGHT_BRACKET LEFT_BRACKET
+&mt LS(LALT) LSHFT           &kp A           &kp S           &kp D           &kp F           &kp G            &kp H           &kp J           &kp K           &kp L        &kp SEMI                  &mt RSHIFT SQT
+  &mt LCTRL ESCAPE           &kp Z           &kp X           &kp C           &kp V           &kp B            &kp N           &kp M       &kp COMMA         &kp DOT        &kp FSLH                  &mt RCTRL BSLH
+                                                      &kp LEFT_WIN     &lt 3 SPACE           &none  &mt 0 BACKSPACE     &lt 1 ENTER     &lt 2 SPACE
             >;
         };
 
@@ -53,10 +53,10 @@
 
         numbers_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none     &kp KP_SLASH        &kp KP_N7        &kp KP_N8        &kp KP_N9  &kp KP_MINUS      &kp K_CALC
-&none  &none  &none  &none  &none  &none  &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp KP_PLUS  &kp KP_NUMLOCK
-&none  &none  &none  &none  &none  &none  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER      &kp KP_DOT
-                     &none  &none  &none            &none            &none            &none
+         &none  &none  &none  &none  &none  &none     &kp KP_SLASH        &kp KP_N7        &kp KP_N8        &kp KP_N9  &kp KP_MINUS  &kp K_CALC
+         &none  &none  &none  &none  &none  &none  &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp KP_PLUS       &none
+&kp KP_NUMLOCK  &none  &none  &none  &none  &none  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &kp KP_DOT
+                              &none  &none  &none            &none            &none            &none
             >;
         };
 
