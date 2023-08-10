@@ -30,6 +30,21 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        win-L {
+            bindings = <&kp LG(L)>;
+            key-positions = <19 20 21>;
+            layers = <0>;
+        };
+
+        ctrl-alt {
+            bindings = <&kp LC(LEFT_ALT)>;
+            key-positions = <27 28 27 28 27 28>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -44,7 +59,7 @@
 
         arrow_layer {
             bindings = <
-             &mt LEFT_WIN TAB  &none  &none  &none        &none       &none       &kp HOME    &kp PG_DN  &kp PG_UP    &kp END  &none      &mt K_CALCULATOR K_CALCULATOR
+             &mt LEFT_WIN TAB  &none  &none  &none        &none       &none       &kp HOME    &kp PG_DN  &kp PG_UP    &kp END  &none   &mt C_AL_CALCULATOR K_CALCULATOR
 &mt LEFT_SHIFT LA(LEFT_SHIFT)  &none  &none  &none        &none       &none       &kp LEFT     &kp DOWN     &kp UP  &kp RIGHT  &none  &mt K_CONTEXT_MENU K_CONTEXT_MENU
              &mt LCTRL ESCAPE  &none  &none  &none        &none       &none          &none        &none      &none      &none  &none                              &none
                                              &none  &lt 0 SPACE  &kp DELETE  &kp BACKSPACE  &lt 0 ENTER      &none
