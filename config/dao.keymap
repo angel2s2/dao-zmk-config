@@ -32,17 +32,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        win-L {
-            bindings = <&kp LG(L)>;
-            key-positions = <19 20 21>;
-            layers = <0>;
-        };
-
-        new_combo {
-            bindings = <&kp LC(LEFT_ALT)>;
-            key-positions = <28 27>;
-        };
     };
 
     keymap {
