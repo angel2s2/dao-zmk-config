@@ -59,9 +59,9 @@
 
         arrow_layer {
             bindings = <
-             &mt LEFT_WIN TAB  &none  &none  &none      &none       &none       &kp HOME  &kp PG_DN  &kp PG_UP    &kp END  &none   &mt C_AL_CALCULATOR K_CALCULATOR
-&mt LEFT_SHIFT LA(LEFT_SHIFT)  &none  &none  &none      &none       &none       &kp LEFT   &kp DOWN     &kp UP  &kp RIGHT  &none  &mt K_CONTEXT_MENU K_CONTEXT_MENU
-             &mt LCTRL ESCAPE  &none  &none  &none      &none       &none          &none      &none      &none      &none  &none                              &none
+             &mt LEFT_WIN TAB  &none  &none  &none      &none       &none       &kp HOME  &kp PG_DN  &kp PG_UP    &kp END  &none   &kp K_CALCULATOR
+&mt LEFT_SHIFT LA(LEFT_SHIFT)  &none  &none  &none      &none       &none       &kp LEFT   &kp DOWN     &kp UP  &kp RIGHT  &none  &kp K_APPLICATION
+             &mt LCTRL ESCAPE  &none  &none  &none      &none       &none          &none      &none      &none      &none  &none              &none
                                              &none  &kp SPACE  &kp DELETE  &kp BACKSPACE  &kp ENTER      &none
             >;
         };
