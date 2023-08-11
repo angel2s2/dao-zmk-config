@@ -36,6 +36,8 @@
         new_combo {
             bindings = <&kp LG(L)>;
             key-positions = <19 20 21>;
+            slow-release;
+            layers = <0>;
         };
     };
 
