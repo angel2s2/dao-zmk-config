@@ -44,40 +44,48 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        L0 {
             bindings = <
        &mt GRAVE TAB  &kp Q  &kp W                  &kp E        &kp R    &kp T     &kp Y        &kp U           &kp I    &kp O     &kp P  &mt RIGHT_BRACKET LEFT_BRACKET
 &mt LSHIFT LA(LSHFT)  &kp A  &kp S                  &kp D        &kp F    &kp G     &kp H        &kp J           &kp K    &kp L  &kp SEMI                  &mt RSHIFT SQT
     &mt LCTRL ESCAPE  &kp Z  &kp X                  &kp C        &kp V    &kp B     &kp N        &kp M       &kp COMMA  &kp DOT  &kp FSLH                  &mt RCTRL BSLH
                                     &mt LEFT_ALT LEFT_WIN  &lt 4 SPACE  &kp DEL  &kp BSPC  &lt 1 ENTER  &lt 2 LEFT_ALT
             >;
+
+            label = "default_layer";
         };
 
-        arrow_layer {
+        L1 {
             bindings = <
              &mt LEFT_WIN TAB  &none  &none  &none      &none       &none       &kp HOME  &kp PG_DN  &kp PG_UP    &kp END  &none   &kp K_CALCULATOR
 &mt LEFT_SHIFT LA(LEFT_SHIFT)  &none  &none  &none      &none       &none       &kp LEFT   &kp DOWN     &kp UP  &kp RIGHT  &none  &kp K_APPLICATION
              &mt LCTRL ESCAPE  &none  &none  &none      &none       &none          &none      &none      &none      &none  &none              &none
                                              &none  &kp SPACE  &kp DELETE  &kp BACKSPACE  &kp ENTER      &none
             >;
+
+            label = "arrow_layer";
         };
 
-        lower_layer {
+        L2 {
             bindings = <
    &mt LGUI F1    &kp F2  &kp F3                &kp F4       &kp F5     &kp F6     &kp F7     &kp F8    &kp F9   &kp F10   &kp F11          &kp F12
 &mt LCTRL PLUS  &kp EXCL  &kp AT              &kp HASH     &kp DLLR  &kp PRCNT  &kp CARET   &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RCTRL MINUS
 &mt LALT EQUAL    &kp N1  &kp N2                &kp N3       &kp N4     &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0         &kp RALT
                                   &mt LEFT_CONTROL TAB  &lt 3 SPACE    &kp DEL   &kp BSPC  &kp ENTER    &trans
             >;
+
+            label = "lower_layer";
         };
 
-        adjust_layer {
+        L3 {
             bindings = <
 &bootloader         &none         &none         &none         &none         &none         &none         &none         &none         &none         &none  &bootloader
  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0   &bt BT_CLR
  &sys_reset         &none         &none         &none         &none         &none         &none         &none         &none         &none         &none   &sys_reset
                                                &trans         &none        &trans         &none        &trans        &trans
             >;
+
+            label = "adjust_layer";
         };
 
         numbers_layer {
@@ -86,15 +94,6 @@
          &none  &none  &none  &none  &none  &none  &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp KP_PLUS       &none
 &kp KP_NUMLOCK  &none  &none  &none  &none  &none  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &kp KP_DOT
                               &none  &none  &none            &none            &none            &none
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-                     &none  &none  &none  &none  &none  &none
             >;
         };
 
